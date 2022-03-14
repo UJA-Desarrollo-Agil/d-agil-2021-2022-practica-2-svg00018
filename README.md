@@ -1,141 +1,109 @@
-# Undum
+# Práctica 2  Desarrollo ágil
 
-Undum is a game framework for building a sophisticated form of
-hypertext interactive fiction.
+## Autor
 
-If that means nothing to you, then let's go back a few steps. Remember
-those Choose Your Own Adventure, or Fighting Fantasy books? Where you
-got to choose what your character does next? Well if you think of that
-in a web-page you have hypertext interactive fiction, or HIF. Instead
-of turning to a particular page, you click a link, and the next bit of
-content appears.
+Samuel Valverde Garcia - _svg00018@red.ujaen.es_.
 
-The problem is that those kinds of games are pretty limited. Every
-time the player does something, the story could go in different
-directions. So the author has to either write masses of branches, or
-else the decisions you make as a player have to be relatively short
-lived. If you played CYOA books you'll know that the wrong move either
-ended the story pretty quickly, or else it didn't really matter what
-you did because you'd end up at the same place.
+Grado en Ingeniría Informática, Universidad de Jaén.
 
-To beat this limitation, Undum allows you to make the output
-dynamic. It allows you to keep track of what has happened to the
-character (any kinds of data, in fact), and to then change the text
-that gets output accordingly. Effectively it is like writing a CYOA
-page that is different each time you read it. This allows for far
-richer and more rewarding game design.
+## Índice
 
-Undum is a pure client client-side library. It consists of a HTML file
-and three Javascript files. The HTML file uses a nice bit of styling,
-so there's a bunch of CSS and images in the default package too, but
-that can be replaced if you want. To create your own game, you edit
-the HTML file a little (mainly just changing the title and author),
-and edit one of the Javascript files.
+[1. Titulo y descripción](#titulo)
 
-Because the game is written in Javascript, you get the full power of a
-dynamic and efficient programming language. This isn't a CYOA
-scripting system with limited functionality. You can take control of
-anything you want. Or you can just keep things simple using a bunch of
-simple functions provided by Undum.
+[2. URL del tablero en trello](#trello)
 
+[3. ¿Qué es Undum?](#undum)
 
-## Compatibility
+[4. Capturas de pantalla en trello](#capturasTrello)
 
-Undum is designed for HTML5 and CSS3 browsers. It has been tested on
-Firefox 3.6, Chrome 5, and Safari 5. Older browsers may work okay too,
-but some of the animation won't work, the styles may render poorly,
-and saving and loading of games is unlikely to work. Anyone who wants
-to hack around with it and make it work more widely is welcome. Just
-fork this project on Github.
+- [4.1 Inicio](#Foto1)
+- [4.2 Semana 02/03/2022](#Foto2)
+- [4.3 Semana 09/03/2022](#Foto3)
+- [4.4 Final](#Foto4)
+- [4.5 Descripción de las tarjetas de trello](#Foto5)
 
-The local storage system on some browsers does not work when loading a
-page from your hard drive. To test your game when developing it, you
-may want to start up a simple local webserver. I have found that
-Chrome seems to reliably provide local storage for local
-development. It also has excellent Javascript debugging tools.
+[5. Configuración de trello con telegram](#configuracion)
 
+<a name="titulo"></a>
 
-## Getting Started
+# 1. Titulo y descripción
 
-1. Download Undum. Use the 'download zip' link in the right column of
-   this page.
+## **Un concierto inesperado**
 
-2. Unzip Undum somewhere on your hard-drive.
+El juego relata un dia extremadamente raro en el que debe elegir entre ir de fiesta o estudiar para el examen que tiene al dia siguiente.
 
-3. Open games/tutorial.html in your browser, and play through the tutorial.
+<a name="trello"></a>
 
-4. Copy games/tutorial.html to a file that reflects your game name.
+# 2. URL del tablero en trello
 
-5. Edit your HTML file and add the title, author and description of
-   the game you want to write. At the bottom of the file change the
-   name of `tutorial.game.js` to something else (by convention
-   *your-game-name*`.game.js`.
+**_Enlace al tablero de Trello_**: [https://trello.com/b/s9z3Yw5F/practica2](https://trello.com/b/s9z3Yw5F/practica2)
 
-6. Copy `tutorial.game.js` to the file name you chose in the last
-   step. Open it and begin creating your game.
+<a name="undum"></a>
 
+# 3. ¿Qué es Undum?
 
-Reference documentation, including full API details, is at
-[http://idmillington.github.io/undum/](http://idmillington.github.io/undum/),
-and is also included in the repository.
+Undum es un framework que se ejecuta en un navegador y permite crear juegos interactivos basados en HTML, CSS y Javascript.
 
-The source code for all the files is also heavily commented, so if you
-get stuck, go in and read it.
+Está disponible en http://github.com/idmillington/undum, desde donde se puede descargar el código para crear nuevos juegos, así como acceder a [un manual básico de utilización](http://idmillington.github.io/undum/).
 
+<a name="capturasTrello"></a>
 
-## Deploying
+# 4. Capturas de pantalla en trello
 
-To deploy your game, just upload your HTML file and the `media` folder
-to your webserver. You can serve several games with the same look and
-feel from the same directory. You need a different HTML file for each
-game, and each one should load the correct `.game.js` file at the
-end. Add any media you need for your game (images, audio, video), and
-the remaining files will be reused.
+<a name="Foto1"></a>
 
-For example, if you had 3 games: `episode1`, `episode2`, and
-`christmas-special`. You'd have a directory structure:
+## 4.1. Inicio
 
-    episode1.html
-    episode2.html
-    christmas-special.html
-    media/
-        css/ ...
-        img/ ...
-        js/
-            jquery-1.4.2.min.js
-            undum.js
-        games/
-            episode1/
-                episode1.game.js
-                ... media for episode 1 ...
-            episode2/
-                episode2.game.js
-                ... media for episode 1 ...
-            christmas-special/
-                christmas-special.game.js
-                ... media for christmas special ...
+![Captura1](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-2-svg00018/blob/master/img/TrelloInicio.png)
 
-This assumes you use the same directory lay out that I do. You are
-welcome to change things around, of course, as long as you work and
-change the references.
+_Captura del tablero al inicio de la practica_
 
+<a name="Foto2"></a>
 
-## Undum
+## 4.2. Semana 02/03/2022
 
-The name `undum` came from a little project that preceded this code
-base. In 2008 I put together a simple browser based game. It was
-narrative, but used the grind-based mechanics of games such as
-Farmville and Mafia Wars. Because of the grinding, I called it
-Carborundum, which I found I couldn't type at speed, so it became
-Undum. The code has changed out of all recognition since them, as the
-grind-based game moved to Flash. But the name stuck for the Javascript
-framework.
+![Captura2](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-2-svg00018/blob/master/img/Trello02032022.png)
 
+_Captura del tablero la semana 02/03/2022 de la practica_
 
-## License
+<a name="Foto3"></a>
 
-The code, documentation, styles, design and images are all distributed
-under the MIT license. This permits you to modify and use them, even
-for commercial use. A copy of the MIT license is found in the LICENSE
-file.
-.
+## 4.3. Semana 09/03/2022
+
+![Captura3](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-2-svg00018/blob/master/img/Trello09032022.png)
+
+_Captura del tablero la semana 09/03/2022 de la practica_
+
+<a name="Foto4"></a>
+
+## 4.4. Final
+
+![Captura4](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-2-svg00018/blob/master/img/TrelloFinal.png)
+
+_Captura del tablero al final de la practica_
+
+<a name="Foto5"></a>
+
+## 4.5. Descripción de las tarjetas de trello
+
+![Captura5](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-2-svg00018/blob/master/img/capturaDeDescripcion.png)
+
+_Captura de la descripcion de la tarjeta en trello_
+
+<a name="configuracion"></a>
+
+# 5. Configuración de trello con telegram
+
+![Captura6](https://github.com/UJA-Desarrollo-Agil/d-agil-2021-2022-practica-2-svg00018/blob/master/img/ErrorConeccion.png)
+
+Para la practica no he podido realizar la conexión de trello con telegram ya que se excedia de los limites, ya que es una cuenta gratuita cuenta con las siguientes caracteristicas:
+
+- Supervision de la ejecución en tiempo real
+- Usuarios ilimitados
+- Ejecución de escenarios en paralelo
+- Tiempo máximo de ejecución del escenario en minutos: 5
+- Tamaño máximo de archivo en MB: 5
+- Número máximo de escenarios activos: 2
+- Intervalo mínimo entre escenarios programados en minutos: 15
+- Alojamientos: AWS
+- Almacenamiento de registro de ejecución en días: 7
